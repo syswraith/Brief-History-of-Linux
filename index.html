@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!-- Handcrafted by Aryan Karekar, with help from Emmet and VS Code. -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        
+        i { color: yellow; border-radius: 5px;}
+        * { color: white; font-family: 'Source Code Pro', monospace; padding: 3px; }
+        p { font-size: 15px; width: auto; margin: auto;}
+        
+        .img-1 {
+            height: 250px;
+            width: auto;
+            border-style: none;
+            border-radius: 50%;
+            margin: 5%;
+        }
+
+        body {
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(51,48,48,1) 100%);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .box1 {
+            display: block;
+            position: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            padding: 10px;
+            
+            background-color: rgb(36, 33, 33);
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 10px;
+            background-color: black;
+            border-radius: 10px;
+            display: block;
+            margin: auto; 
+            position: relative; 
+            text-align: center; 
+            border-width: 5px; 
+            border-style: solid; 
+            border-color: grey;
+        }
+
+        @media (max-width: 800px){
+            .img-1 {
+                height: 100px;
+                width: auto;
+                border-style: none;
+                border-radius: 50%;
+                margin: 1%;
+                margin-top: 5%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="box1">
+        <h1>A brief history of GNU/Linux</h1>
+        <h3>IT project - made by <i>Aryan Karekar</i></h3>
+    </header>
+    <br>
+    <main>
+        <section class="section">
+            
+            <h1 style="font-size: 50px;">UNIX</h1>
+
+            <span>
+                <img class="img-1" src="https://i0.wp.com/logotaglines.com/wp-content/uploads/2017/01/ATT_logo.png" alt="AT&T">
+                <img class="img-1" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/MIT_Seal.svg/1200px-MIT_Seal.svg.png" alt="MIT">
+                <img class="img-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/General_Electric_logo.svg/1200px-General_Electric_logo.svg.png" alt="GC">
+            </span>
+            <br><br>
+            
+            <p>In 1965, a collaborative project named <i>MULTICS</i> was begun by AT&T, MIT and GE. It was aimed at creating an operating system to show that general-purpose, multi-user, timesharing systems were ready to be released into the mainstream. However in 1969, <i>AT&T pulled out</i> of the project, frustrated by its slow progress.</p><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Multics-Login.png/300px-Multics-Login.png" alt="MULTICS"><br><br>
+            
+            <p>Two researchers employed at AT&T decided to reimpliment their experiences by designing another project. They were <i>Ken Thompson</i> and <i>Dennis Ritchie</i>, and the project was called <i>UNICS</i>.</p><br>
+            <img style="height: 225px; border-radius: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg/2557px-Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg" alt="Ken and Dennis"><br><br>
+
+            <p>UNICS was a a single-tasking system, without an organizational backing. It was also written in <i>Assembly language</i>, which was one of the reasons why <i>portability wasn't achieved</i> by UNICS. Ken Thompson began working on a new programming language name <i>B</i>, which would serve and a <i>viable replacement</i> for Assembly language. However, Dennis Ritchie began working on a fork of B, initially called NB or "New B" but later changed to <i>C</i>.</p><br>
+            <img style="height: 225px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" alt="C"><br><br>
+
+            <p>C is a much more improved version of B, and was used to rewrite UNICS. After 1973, the UNIX project (initially UNICS) was <i>95% C</i> and <i>5% Assembly language</i>. AT&T licensed bought the license for UNIX and the software was officially declared as <i>proprietary</i>.</p>
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/UNIX_logo.svg/250px-UNIX_logo.svg.png" alt="UNIX">
+        </section>
+        <br>
+        <section class="section">
+            <h1 style="font-size: 50px;">GNU, GPL and Linux</h1>
+            <img style="height: 225px; width: 225px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/1200px-Heckert_GNU_white.svg.png" alt="Richard Stallman's website">
+            <p>In 1984, Richard Stallman began developing an operating system named GNU, that was a free software replacement for UNIX. UNIX in 1984 had hundreds of components, so developing a replacement meant that almost every one of those components had to be rewritten. By 1992, they had almost the entire operating system, but one essential component was missing, that was the kernal. The kernal allocates the computer's resources and memory to other programs so they may function.</p>
+            <br>
+
+            <img style="height: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/1200px-GPLv3_Logo.svg.png" alt="GPL">
+            <br><br>
+            <p>The GNU project also inspired the GPL. The software under this license is termed as "Free Software", which means that anyone can use, copy, distribute and modify it.</p>
+
+            <img style="width: 250px" src="./torvalds.jpeg" alt="Linus Torvald's Announcement">
+            <p>In early 1991, Linus Torvalds, a student of the University of Helsinki started working on an operating system that would allow him to have more control over his computer's resources. It resulted in a kernal which, after several events, was named Linux. In 1992, he liberated it under the GPL license.
+            </p><br>
+
+            <img style="height: 225px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Gnulinux.svg/1200px-Gnulinux.svg.png" alt="GNULINUX">
+            <p>This allowed the creation of a whole operating system, complete with GNU's components and the Linux kernal, which would serve as a "free" replacement of Unix.</p>
+        </section>
+        <br>
+        <section class="section">
+            <h1 style="font-size: 50px;">Linux or GNU/Linux?</h1>
+            <img style="height: 225px; border-radius: 10px;" src="https://pbs.twimg.com/media/DpKN1ZZXUAEehdj.jpg" alt="GNU+LINUX">
+            <br><br>
+            <p>Within the free software and the open-source software communities there is controversy over whether to refer to computer operating systems that use a combination of GNU software and the Linux kernel as "GNU/Linux" or "Linux" systems. Proponents of the term Linux argue that it is far more commonly used by the public and media, and that it serves as a generic term for systems that combine that kernel with software from multiple other sources; while proponents of the term GNU/Linux note that GNU alone would be just as good a name for GNU variants which combine the GNU operating system software with software from other sources.</p>
+            <br><br>
+
+            <img style="height: 225px; border-radius: 10px;" src="https://www.nicepng.com/png/detail/201-2015470_gnu-tux-gnu-linux-logo-png.png" alt="GNU/LINUX">
+            <br><br>
+
+            <p>The term GNU/Linux is promoted by the Free Software Foundation and its founder Richard Stallman. Their reasoning is that the GNU project was the main contributor for not only many of the operating system components used in the subsequent development of modern "Linux" systems, but also the associated free software philosophy.</p>
+        </section>
+        <br>
+        <section class="section">
+            <h1 style="font-size: 50px;">Legacies</h1>
+            <p>There are three main families of GNU/Linux: Debian, Arch and RedHat.</p>
+            <span>
+                <img class="img-1" src="https://www.debian.org/Pics/debian-logo-1024x576.png" alt="debian">
+                <img class="img-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Red_Hat_logo.svg/2560px-Red_Hat_logo.svg.png" alt="redhat">
+                <img class="img-1" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" alt="arch">
+            </span>
+            <br><br>
+            <p>Other operating systems (or distros) are mainly customized and put forth by following the standards these families have set.</p>
+        </section>
+        <section></section>
+    </main>
+    <footer style="text-align: left;" class="section">
+        MULTICS = Multiplexed Information and Computing Services<br><br>
+        UNICS = Uniplexed Information and Computing Services<br><br>
+        AT&T = Amerrican Telephone and Telegraph<br><br>
+        MIT = Massachusetts Institute of Technology<br><br>
+        GE = General Electronics<br><br>
+        Assembly language = A language used to directly manipulate the hardware<br><br>
+        GNU = GNU's Not Unix!<br><br>
+        GPL = General Public License<br><br>
+    </footer>
+</body>
+</html>
